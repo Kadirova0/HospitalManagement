@@ -1,0 +1,266 @@
+﻿@model List<Doctor>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,200;0,300;1,300;1,400&family=Mukta:wght@300;500&family=Noto+Sans+JP:wght@100;200&family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/styles/css/common/header.css">
+</head>
+<body>
+    <div class="admin w-full h-full inline-block">
+        <nav class="navbar w-[1166px] min-w-[330px] h-[74px] border-b-[1px] solid border-state-300 top-0 right-0 mx-[30px] my-0 px-0 py-[10px] fixed bg-white z-[8]">
+            <div class="container w-full h-[54px] px-0 py-0 mx-auto flex items-center justify-between">
+                <div class="nav-left w-[320px] h-[33px] block">
+                    <form action="#" class="nav-search w-[300px] h-[33px] px-0 py-0 mr-5 float-left relative mt-0">
+                        <button class="button w-[14px] h-[21px] px-0 py-0 mx-0 my-0 shadow-none absolute top-[7px] left-0 cursor-pointer border-0">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #94979e;"></i>
+                        </button>
+                        <input type="search" name="search" id="search" placeholder="Search here" class="w-[300px] h-[33px] px-5 py-4  bg-transparent border-0 rounded-0 shadow-none text-base block">
+                    </form>
+                </div>
+                <div class="nav-right w-[346px] h-[54px] inline-flex">
+                    <ul class="w-[346px] h-[54px] mx-0 my-0 inline-block pl-0 flex items-center justify-end mr-10">
+                        <li class="dropdown w-[43px] h-[54px] relative inline-block align-middle mr-4">
+                            <a href="#" class="w-full h-full text-2xl inline-block relative px-[15px] py-[15px] align-middle cursor-pointer">
+                                <i class="fa-solid fa-language" style="color: #797d81;"></i>
+                            </a>
+                            <div class="dropdown-content w-[85px] font-medium  h-[85px] bg-transparent translate-y-[20px] absolute left-55 z-[1000] text-left py-2 border-0 border-solid border-[#f8f9fa] shadow-[0_0.8px_4.8px_rgba(0,0,0,0.175)]">
+                                <a href="#" class="px-6 text-[#868e96] hover:text-[#e16919] cursor-pointer text-sm">AZE</a>
+                                <a href="#" class="px-6 text-[#868e96] hover:text-[#e16919] cursor-pointer text-sm">TR</a>
+                                <a href="#" class="px-6 text-[#868e96] hover:text-[#e16919] cursor-pointer text-sm">ENG</a>
+                            </div>
+                        </li>
+                        <li class="w-[43px] h-[54px] relative inline-block align-middle">
+                            <a href="login.html" class="w-full h-full text-xl inline-block relative px-[15px] py-[15px] align-middle cursor-pointer">
+                                <i class="fa-solid fa-power-off" style="color: #797d81;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar w-[270px] h-full mt-0 border-r-[3px] border-[#1a67a2] solid fixed float-left left-0 z-[9] bg-white">
+            <div class="logo w-[157px] h-[40px] block align-middle px-0 pt-0 pb-4 mb-0 mt-[25px] mx-10 flex items-center justify-center">
+                <a href="#" class="flex items-center justify-center">
+                    <img src="https://www.thehospitalonline.com/images/TheHospitalOnline-logo.png" alt="Logo" class="h-auto">
+                </a>
+            </div>
+            <div class="scroll w-auto min-h-[-65px] h-screen relative overflow-hidden hover:overflow-scroll cursor-pointer">
+                <div class="w-auto min-h-[-65px] h-screen">
+                    <div class="w-[227px] h-[45px] mx-[20px] mt-[50px] inline-block align-middle relative">
+                        <div class="w-[44px] h-[44px] px-[2px] py-[2px] align-top inline-block">
+                            <img src="~/styles/assets/img/user.png" alt="img" class="w-10 h-10 rounded-[40px] align-middle">
+                        </div>
+                        <div class="dropdown w-[115px] h-[45px] ml-[10px] relative align-middle inline-block">
+                            <span class="w-[63px] h-5 text-slate-400 text-sm text-left">Welcome</span>
+                            <a href="#" class="w-[115px] h-[22px] block align-middle text-[#116950]">
+                                <strong>Admin</strong>
+                                <i class="fa-solid fa-caret-down" style="color: #116950;"></i>
+                            </a>
+                            <ul class="dropdown-content w-[160px] h-[140px] bg-white right-0 left-auto top-[50px] px-[15px] py-[15px] rounded-lg shadow-[0_2px_20px_0_rgba(0,0,0,0.175)] z-[1000] float-left">
+                                <li>
+                                    <a href="#" class="block align-middle text-base px-[10px] py-[10px] text-[#112950]">
+                                        <i class="fa-regular fa-user text-lg inline-block mr-[10px]" style="color: #112950;"></i>My Profile
+                                    </a>
+                                </li>
+                                <li class="mx-0 my-[7px] border-b-[1px] solid border-state-400"></li>
+                                <li>
+                                    <a href="login.html" class="block align-middle text-base px-[10px] py-[10px] text-[#112950]">
+                                        <i class="fa-solid fa-power-off text-lg inline-block mr-[10px]" style="color: #112950;"></i>Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="sidebar-nav w-[267px] h-[940px] px-[10px] py-0 block">
+                        <ul class="menu w-[247px] h-[940px] px-0 py-0 mx-0 my-0 list-none flex flex-col">
+                            <li class="w-full h-[18px] text-slate-400 text-sm mt-[30px] mb-[5px] px-[15px] py-0 flex grow shrink basis-[0%] relative flex-col box-border list-none">HOSPITAL</li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Dashboard</span>
+                                    <i class="fa fa-dashboard w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="addDoctor.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Doctors</span>
+                                    <i class="fa fa-user-md w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin-app.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Appointment</span>
+                                    <i class="fa fa-calendar w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Todo List</span>
+                                    <i class="fa fa-th-list w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Patients</span>
+                                    <i class="fa-regular fa-user w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Room Allotment</span>
+                                    <i class="fa fa-thumbs-up w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Departments</span>
+                                    <i class="fa fa-table w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Payments</span>
+                                    <i class="fa-brands fa-cc-paypal w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[12px] text-slate-400 text-sm mt-[10px] mb-[5px] px-[15px] py-0 flex grow shrink basis-[0%] relative flex-col box-border list-none">ADMIN</li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Email</span>
+                                    <i class="fa fa-envelope w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Chat</span>
+                                    <i class="fa fa-comments w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Our Staffs</span>
+                                    <i class="fa fa-users w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Contacts</span>
+                                    <i class="fa fa-address-book w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">File Manager</span>
+                                    <i class="fa fa-folder w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Our Centers</span>
+                                    <i class="fa-solid fa-location-dot w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[12px] text-slate-400 text-sm mt-[10px] mb-[5px] px-[15px] py-0 flex grow shrink basis-[0%] relative flex-col box-border list-none">SOCIAL</li>
+                            <li class="w-full h-[18px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Blog</span>
+                                    <i class="fa fa-globe w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                            <li class="w-full h-[18px] mb-[60px] flex grow shrink flex-col relative">
+                                <a href="admin.html" class="w-[247px] h-full hover:text-[#116950] text-black relative align-middle py-2 pr-5 pl-[15px]">
+                                    <span class="w-[73px] h-5 font-medium bg-transparent cursor-pointer text-base">Social</span>
+                                    <i class="fa fa-share-alt-square w-5 h-4 text-base absolute right-[10px] top-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1226px] h-[904px] float-right relative mt-[75px] px-5 py-0 min-w-[270px]">
+            <div class="w-[1186px] h-[889px]  px-[15px] mx-auto block">
+                <div class="header w-[1156px] h-[80px] my-[15px] px-0 py-[15px]">
+                    <div class="w-[1171px] h-[50px] flex flex-wrap">
+                        <div class="w-[585px] h-[50px] px-[7.5px] grow-0 shrink-0 basis-1/2	max-w-1/2 relative">
+                            <h1 class="w-[570px] h-7 text-xl mb-0 leading-7 text-[#112950] font-semibold mt-0 block">Hi, Welcomeback!</h1>
+                            <span class="w-[141px] h-5 box-border text-sm font-light text-left text-[#116950]">JustDo Dashboard</span>
+                        </div>
+                        <div class="w-[585px] h-[50px] px-[7.5px] text-right grow-0 shrink-0 flex basis-1/2	max-w-1/2 relative">
+                            <div class="w-[570px] h-[49px] mt-0 flex items-center justify-end flex-wrap box-border">
+                                <div class="w-[59px] h-[49px] mb-0 pr-6 mr-6 border-r-[1px] solid border-slate-200">
+                                    <p class="text-base text-slate-300 mt-0 mb-1 text-right">Fever</p>
+                                    <h5 class="mb-0 text-xl font-medium leading-5 mt-0">12</h5>
+                                </div>
+                                <div class="w-[59px] h-[49px] mb-0 pr-6 mr-6 border-r-[1px] solid border-slate-200 text-right">
+                                    <p class="text-base text-slate-300 mt-0 mb-1 text-right">Cholera</p>
+                                    <h5 class="mb-0 text-xl font-medium leading-5 mt-0">13</h5>
+                                </div>
+                                <div class="w-[59px] h-[49px] mb-0 mr-6 pr-6">
+                                    <p class="text-base text-slate-300 mt-0 mb-1 text-right">Malaria</p>
+                                    <h5 class="mb-0 text-xl font-medium leading-5 mt-0">25</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[1171px] h-[794px] mx-[-7.5px] flex flex-wrap">
+                    <div class="w-full h-[794px] grow-0 shrink-0 px-[7.5px] basis-full relative">
+                        <div class="w-[1156px] h-[727px] min-w-0 inline-block align-middle border-0 relative mb-[15px] rounded-0 bg-white break-words">
+                            <div class="container mx-auto">
+                                <h1 class="text-3xl text-[#115950] font-bold mb-4">Doctors</h1>
+                                <div class="flex justify-end mb-4">
+                                    <a asp-controller="Doctor" asp-action="Add" class="btn bg-[#115950] hover:bg-[#114970] text-white font-bold py-2 px-4 rounded">Add Doctor</a>
+                                </div>
+                                <table class="min-w-full bg-white">
+                                    <thead class="bg-[#114970] text-white">
+                                        <tr>
+                                            <th class="text-left py-2 px-4">#</th>
+                                            <th class="text-left py-2 px-4">Name</th>
+                                            <th class="text-left py-2 px-4">Surname</th>
+                                            <th class="text-left py-2 px-4">Department</th>
+                                            <th class="w-[70px] text-left py-2 px-4">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{
+                                           int  rowCount = 1;
+                                        }
+                                        @foreach(var doctor in Model)
+                                        {
+                                            <tr>
+                                                <td class="border px-4 py-2">@rowCount</td>
+                                                <td class="border px-4 py-2">@doctor.Name</td>
+                                                <td class="border px-4 py-2">@doctor.Surname</td>
+                                                <td class="border px-4 py-2">@(doctor.Department?.Name ?? "-")</td>
+                                                <td class="border px-4 py-2 flex justify-center">
+                                                    <a asp-controller="Doctor" asp-action="Edit" asp-route-id="@doctor.Id" class="px-[30px] py-1 cursor-pointer  rounded-0 text-center">
+                                                        <i class="fa-solid fa-pencil" style="color: #488181;"></i>
+                                                    </a>
+                                                    <a asp-controller="Doctor" asp-action="Delete" asp-route-id="@doctor.Id" class="px-[15px] py-1 cursor-pointer rounded-0 text-center">
+                                                        <i class="fa-solid fa-trash" style="color: #ae0f24;"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            rowCount++;
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

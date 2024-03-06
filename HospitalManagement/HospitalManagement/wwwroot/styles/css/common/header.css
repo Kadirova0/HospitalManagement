@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dropdown-content {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 20px;
+  transition: 0.5s;
+}
+
+.dropdown {
+  transition: 0.5s !important;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}

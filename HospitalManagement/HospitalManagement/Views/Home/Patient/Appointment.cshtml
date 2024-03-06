@@ -1,0 +1,151 @@
+﻿@model List<Doctor>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/styles/css/common/header.css">
+</head>
+<body>
+    <header class="page-header sticky bg-rose-50 w-full top-0 left-0 z-[999999999] shadow-[0_10px_30px_-5px_rgba(193,30,67,.2)]">
+        <div class="header relative flex h-20 items-center">
+            <div class="container max-w-[1180px] w-full mx-auto">
+                <div class="row flex mx-[-15px] flex-wrap">
+                    <div class="logow-[204px] h-full relative flex items-center justify-center">
+                        <a href="index.html" class="flex items-center justify-center">
+                            <img src="https://www.thehospitalonline.com/images/TheHospitalOnline-logo.png" alt="Logo" class="h-auto">
+                        </a>
+                    </div>
+                    <div class="search pl-0 relative w-[1028px] pr-[15px]">
+                        <div class="action flex items-center h-full">
+                            <form action="#" class="searchbar flex items-center justify-end h-full grow">
+                                <div class="searchbar-container relative shadow-[0_0_10px_0_rgba(137,197,204,.25)] bg-white rounded-t rounded-b border-x border-y border-solid  border-[#1a67a2]">
+                                    <div class="w-[433px] relative">
+                                        <input type="text" placeholder="Doctor, Category..." class="search-input w-full block h-[40px] relative rounded-b rounded-t z-[9999] py-2.5	pl-5 pr-10">
+                                    </div>
+                                    <div class="search-btn flex absolute right-0 top-0 h-full items-center z-[99999] px-[10px] py-[10px] text-xl">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #1a67a2;"></i>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="w-[310px] h-[45px] relative flex items-center box-border flex-row flex-wrap shrink grow-0 basis-auto list-none">
+                                <li class="nav-item w-[84px] h-6 pl-6 align-middle block">
+                                    <a href="login.html" class="login text-[#1a67a2] flex text-center cursor-pointer px-0 py-0 bg-transparent hover:text-[#e16919] text-lg hover:text-xl font-bold border-none">
+                                        Log in
+                                    </a>
+                                </li>
+                                <li class="nav-item w-[114px] h-[45px] pl-6 align-middle block">
+                                    <a href="regst.html" class="reg w-[100px] h-[45px] block border-0 appearance-none cursor-pointer px-[14px] flex items-center justify-center text-center align-middle leading-6 py-2.5 bg-[#1a67a2] hover:bg-[#e16919] text-white text-base hover:text-lg font-semibold rounded-[60px]">
+                                        Sign up
+                                    </a>
+                                </li>
+                                <li class="nav-item w-[44px] h-5 pl-6 align-middle block">
+                                    <a href="feedback.html" class="search w-5 h-5 flex border-0 cursor-pointer pl-6 pr-0 text-[#005450] py-0 text-base font-semibold bg-transparent">
+                                        <div class="w-5 h-5 text-2xl flex items-center">
+                                            <i class="fa-regular fa-comment-dots hover:text-3xl" style="color: #1a67a2;"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown w-[44px] h-5 pl-6 align-middle block">
+                                    <a href="#" class="search w-5 h-5 flex border-0 cursor-pointer pl-6 pr-0 text-[#005450] py-0 text-base font-semibold bg-transparent">
+                                        <div class="w-5 h-5 text-2xl flex items-center pl-4">
+                                            <i class="fa-solid fa-language" style="color: #1a67a2;"></i>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content w-[85px] h-[85px]  bg-white translate-y-[20px] absolute left-55 z-[1000] text-left py-2 border-0 border-solid border-[#f8f9fa] shadow-[0_0.8px_4.8px_rgba(0,0,0,0.175)]">
+                                        <a href="#" class="px-6 font-medium bg-transparent text-black hover:text-[#e16919] cursor-pointer text-sm">AZE</a>
+                                        <a href="#" class="px-6 font-medium bg-transparent text-black hover:text-[#e16919] cursor-pointer text-sm">TR</a>
+                                        <a href="#" class="px-6 font-medium bg-transparent text-black hover:text-[#e16919] cursor-pointer text-sm">ENG</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation w-full h-[52px] bg-black block">
+            <div class="navigation-inner">
+                <div class="container max-w-[1150px] w-full h-[52px] px-[15px] mx-auto">
+                    <ul class="w-full h-[52px] flex mb-0 justify-between items-center flex-row">
+                        <li class="inline-block leading-5 text-lg text-white hover:text-[#e16919] font-semibold">
+                            <a href="index.html" class="py-4 px-0">Home</a>
+                        </li>
+                        <span class="dot w-[6px] h-[6px] bg-rose-50 rounded-[50%] inline-block"></span>
+                        <li class="inline-block leading-5 text-lg text-white hover:text-[#e16919] font-semibold">
+                            <a href="appointment.html" class="py-4 px-0">Make Appointment</a>
+                        </li>
+                        <span class="dot w-[6px] h-[6px] bg-rose-50 rounded-[50%] inline-block"></span>
+                        <li class="inline-block leading-5 text-lg text-white hover:text-[#e16919] font-semibold">
+                            <a href="#" class="py-4 px-0">Lab-results</a>
+                        </li>
+                        <span class="dot w-[6px] h-[6px] bg-rose-50 rounded-[50%] inline-block"></span>
+                        <li class="inline-block leading-5 text-lg text-white hover:text-[#e16919] font-semibold">
+                            <a href="#" class="py-4 px-0">About</a>
+                        </li>
+                        <span class="dot w-[6px] h-[6px] bg-rose-50 rounded-[50%] inline-block"></span>
+                        <li class="inline-block leading-5 text-lg text-white hover:text-[#e16919] font-semibold">
+                            <a href="contact.html" class="py-4 px-0">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[998px] bg-[url('styles/assets/img/background.png')] bg-cover bg-center">
+        <div class="w-full h-[998px] my-0 mx-0 flex flex-wrap items-center justify-around px-0 py-0">
+            <div class="w-[585px] h-[710px]">
+                <h1 class="w-[685px] h-[104px] text-[90px] text-white pt-2 font-bold block">Meet the Best</h1>
+                <h2 class="w-[585px] h-[104px] text-[90px] text-white pt-2 font-bold block">Hospital</h2>
+                <p class="w-[528px] h-[68px] text-[30px] text-white pt-2 mt-[30px] mb-[30px] block">We Know how large objects will act, but things on a small scale</p>
+            </div>
+            <div class="book block w-[491px] h-[710px] bg-white px-10 py-[50px] rounded-[10px]">
+                <form action="#" class="w-[411px] h-[568px] flex flex-col">
+                    <h2 class="w-full h-10 text-[#e16919] text-[35px] mb-10 font-semibold flex items-center justify-center">Make Appointment</h2>
+                    <label for="name" class="w-full h-[76px]">
+                        Name* <br>
+                        <input type="text" placeholder="Full Name" class="form-text w-full h-10 bg-[#e8e8e8] border-[#dddcdc] solid border-[1px] block py-0 pl-2.5 pr-7 mx-0 my-2">
+                    </label>
+                    <label for="email" class="w-full h-[76px]">
+                        Email* <br>
+                        <input type="text" placeholder="example@example.com" class="form-text w-full h-10 bg-[#e8e8e8] border-[#dddcdc] solid border-[1px] block py-0 pl-2.5 pr-7 mx-0 my-2">
+                    </label>
+                    <label for="select" class="w-full h-[76px]">
+                        Department* <br>
+                        <select name="select" id="#" class="w-full h-10 border-[1px] solid border-[#dddcdc] bg-[#e8e8e8] mx-0 my-2">
+                            <option value="#" class="mx-0 my-0 px-0 py-0 block">Please Select</option>
+                        </select>
+                    </label>
+                    <label for="select" class="w-full h-[76px]">
+                        Doctor* <br>
+                        <select name="select" id="#" class="w-full h-10 border-[1px] solid border-[#dddcdc] bg-[#e8e8e8] mx-0 my-2">
+                            <option value="#" class="mx-0 my-0 px-0 py-0 block">Please Select</option>
+                        </select>
+                    </label>
+                    <label for="date">
+                        Date* <br>
+                        <input type="date" class="form-text w-full h-10 bg-[#e8e8e8] border-[#dddcdc] solid border-[1px] block py-0 pl-2.5 pr-7 mx-0 my-2">
+                    </label>
+                    <label for="time">
+                        Time* <br>
+                        <input type="time" class="form-text w-full h-10 bg-[#e8e8e8] border-[#dddcdc] solid border-[1px] block py-0 pl-2.5 pr-7 mx-0 my-2">
+                    </label>
+                    <button class="btn w-full px-8 py-4 font-bold bg-[#1a67a2] mt-7 rounded-b rounded-t hover:bg-[#e16919] text-white text-lg">
+                        Make Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\avatar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\bG.webp",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\bG.webp"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\background.png",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\doctor1.jpg",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\doctor1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\doctor2.jpg",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\doctor2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\doctor3.jpg",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\doctor3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\doctor4.jpg",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\doctor4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\headerBg.png",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\headerBg.png"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\regBg.avif",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\regBg.avif"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\assets\\img\\user.png",
+      "PackagePath": "staticwebassets\\styles\\assets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\css\\common\\footer.css",
+      "PackagePath": "staticwebassets\\styles\\css\\common\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\css\\common\\header.css",
+      "PackagePath": "staticwebassets\\styles\\css\\common\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\css\\login.css",
+      "PackagePath": "staticwebassets\\styles\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\scss\\common\\footer.scss",
+      "PackagePath": "staticwebassets\\styles\\scss\\common\\footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\scss\\common\\header.scss",
+      "PackagePath": "staticwebassets\\styles\\scss\\common\\header.scss"
+    },
+    {
+      "Id": "C:\\Users\\fatim\\OneDrive\\Masaüstü\\HospitalManagement\\HospitalManagement\\HospitalManagement\\wwwroot\\styles\\scss\\login.scss",
+      "PackagePath": "staticwebassets\\styles\\scss\\login.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HospitalManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HospitalManagement.props",
+      "PackagePath": "build\\HospitalManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HospitalManagement.props",
+      "PackagePath": "buildMultiTargeting\\HospitalManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HospitalManagement.props",
+      "PackagePath": "buildTransitive\\HospitalManagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
