@@ -1,41 +1,31 @@
-﻿using HospitalManagement.Database;
+﻿using HospitalManagement.Contracts;
+using HospitalManagement.Database;
+using HospitalManagement.Database.DomainModel;
+using HospitalManagement.Services.Abstract;
+using HospitalManagement.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace HospitalManagement.Controllers.Patient
 {
     public class HomeController : Controller
     {
-        private readonly HospitalDbContext _hospitalDbContext;
+        private readonly HospitalDbContext _dbContext;
 
         public HomeController()
         {
-            _hospitalDbContext = new HospitalDbContext();
+            _dbContext = new HospitalDbContext();
         }
 
         public ViewResult Index()
         {
-            return View(_hospitalDbContext.Doctors.ToList());
-        }
-
-        public ViewResult Login()
-        {
-            return View();
-        }
-
-        public ViewResult Register()
-        {
-            return View();
-        }
-
-        public ViewResult Appointment()
-        {
-            return View();
+            return View(_dbContext.Doctors.ToList());
         }
 
         protected override void Dispose(bool disposing)
         {
-            _hospitalDbContext.Dispose();
+            _dbContext.Dispose();
             base.Dispose(disposing);
         }
     }

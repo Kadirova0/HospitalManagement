@@ -28,20 +28,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9jdG9yXERvY3RvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Auth/Appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoXEFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Patient/Appointment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXRpZW50XEFwcG9pbnRtZW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Patient/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXRpZW50XExvZ2luLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/Home/Patient/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXRpZW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fatim/OneDrive/Masaüstü/HospitalManagement/HospitalManagement/HospitalManagement/Views/_ViewImports.cshtml]

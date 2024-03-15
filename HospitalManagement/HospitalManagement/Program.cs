@@ -1,5 +1,8 @@
+using HospitalManagement.Contracts;
 using HospitalManagement.Database;
 using HospitalManagement.Services;
+using HospitalManagement.Services.Abstract;
+using HospitalManagement.Services.Concrets;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +25,14 @@ namespace HospitalManagement
                 .AddAuthentication("Cookies")
                 .AddCookie("Cookies");
 
+
+            builder.Services
+                .AddScoped<IUserService, UserService>()
+                .AddSingleton<IFileService, IFileService>()
+                .AddDbContext<HospitalDbContext>(o =>
+                {
+                    o.UseNpgsql(DatabaseConstants.CONNECTION_STRING);
+                });
 
             var app = builder.Build();
 

@@ -68,17 +68,16 @@ namespace HospitalManagement.Controllers.Admin
                 }
             }
 
-            try
-            {
+            
                 var doctor = new Doctor
                 {
                     Name = model.Name,
                     Surname = model.Surname,
                     DepartmentId = model.DepartmentId,
                 };
-
+            try
+            {
                 _hospitalDbContext.Doctors.Add(doctor);
-
                 _hospitalDbContext.SaveChanges();
 
             }
@@ -141,12 +140,13 @@ namespace HospitalManagement.Controllers.Admin
             if (doctor == null)
                 return NotFound();
 
-            try
-            {
+            
                 doctor.Name = model.Name;
                 doctor.Surname = model.Surname;
                 doctor.DepartmentId = model.DepartmentId;
-
+            try
+            {
+                _hospitalDbContext.Doctors.Update(doctor);
                 _hospitalDbContext.SaveChanges();
             }
             catch (PostgresException e)
