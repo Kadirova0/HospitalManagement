@@ -12,16 +12,9 @@ namespace HospitalManagement.Database
         public HospitalDbContext(DbContextOptions dbContextOptions) 
             : base(dbContextOptions) { }
 
-        public HospitalDbContext()
-        {
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         { 
-            modelBuilder
-                .Entity<Doctor>()
-                .ToTable("doctors", t => t.ExcludeFromMigrations());
-
             modelBuilder
                 .Entity<User>()
                 .HasData(

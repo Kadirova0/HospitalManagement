@@ -11,7 +11,7 @@ namespace HospitalManagement.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Doctors",
-                columns: table => new
+                columns: table => new   
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),

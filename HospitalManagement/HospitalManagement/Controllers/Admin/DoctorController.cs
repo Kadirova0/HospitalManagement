@@ -57,16 +57,16 @@ namespace HospitalManagement.Controllers.Admin
             if (!ModelState.IsValid)
                 return PrepareValidationView("Views/Admin/Doctor/DoctorAdd.cshtml");
 
-            if (model.DepartmentId != null)
-            {
-                var department = _hospitalDbContext.Departments.FirstOrDefault(d => d.Id == model.DepartmentId);
-                if (department == null)
+            if (model.DepartmentId != null);
                 {
-                    ModelState.AddModelError("DepartmentId", "Department doesn't exist");
+                    var department = _hospitalDbContext.Departments.FirstOrDefault(d => d.Id == model.DepartmentId);
+                    if (department == null)
+                    {
+                        ModelState.AddModelError("DepartmentId", "Department doesn't exist");
 
-                    return PrepareValidationView("Views/Admin/Doctor/DoctorAdd.cshtml");
+                        return PrepareValidationView("Views/Admin/Doctor/DoctorAdd.cshtml");
+                    }
                 }
-            }
 
             
                 var doctor = new Doctor
@@ -85,13 +85,13 @@ namespace HospitalManagement.Controllers.Admin
             {
                 _logger.LogError(e, "Postgresql Exception");
 
-                throw e;
+                 throw e;
             }
 
             return RedirectToAction("Doctors");
         }
 
-
+      
        
         [HttpGet("edit")]
         public IActionResult Edit(int id)
@@ -125,7 +125,7 @@ namespace HospitalManagement.Controllers.Admin
 
             if (model.DepartmentId != null)
             {
-                var department = _hospitalDbContext.Departments.FirstOrDefault(d => d.Id == model.DepartmentId.Value);
+                var department = _hospitalDbContext.Departments.FirstOrDefault(d => d.Id == model.DepartmentId);
                 if (department == null)
                 {
                     ModelState.AddModelError("DepartmentId", "Department doesn't exist");
@@ -152,7 +152,7 @@ namespace HospitalManagement.Controllers.Admin
             catch (PostgresException e)
             {
                 _logger.LogError(e, "Postgresql Exception");
-                throw e;
+            throw e;
             }
 
             return RedirectToAction("Doctors");

@@ -339,7 +339,6 @@ C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\Hospita
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\obj\Debug\net6.0\HospitalManagement.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\obj\Debug\net6.0\HospitalManagement.csproj.CopyComplete
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\Npgsql.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\Humanizer.dll
@@ -360,3 +359,5 @@ C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\Hospita
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
 C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\obj\Debug\net6.0\HospitalManagement.sourcelink.json
+C:\Users\fatim\OneDrive\Masaüstü\HospitalManagement\HospitalManagement\HospitalManagement\obj\Debug\net6.0\Hospital.2B9058E3.Up2Date

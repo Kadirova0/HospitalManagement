@@ -13,9 +13,9 @@ namespace HospitalManagement.Controllers.Patient
     {
         private readonly HospitalDbContext _dbContext;
 
-        public HomeController()
+        public HomeController(HospitalDbContext context)
         {
-            _dbContext = new HospitalDbContext();
+            _dbContext = context;
         }
 
         public ViewResult Index()

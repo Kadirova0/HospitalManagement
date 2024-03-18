@@ -35,7 +35,7 @@ public class AuthController : Controller
         }
 
 
-        var claims = new List<Claim>()
+      var claims = new List<Claim>()
         {
              new Claim("Id", user.Id.ToString())
         };
@@ -45,5 +45,5 @@ public class AuthController : Controller
       await  HttpContext.SignInAsync("Cookies", claimPricipal);
 
         return RedirectToAction("index", "home");
-    }
+     }
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="form-page w-full h-[1200px] pt-20 bg-[url('/styles/assets/img/bG.webp')] bg-cover">
-        <form asp-controller="Home" asp-action="Register"> 
+        <form asp-controller="Auth" asp-action="Register"> 
         <div class="form-all max-w-[752px] mt-0 mx-auto mb-5 box-content bg-blue-50 shadow-[0_0_4px_4px_rgba(87,100,126,.21)] mr-8 rounded-[6px] flex w-full flex-col">
             <ul class="form-section w-[732px] h-[1030px] text-base mx-0 my-0 min-h-16 py-0 px-[38px] flex flex-wrap items-start list-none table bg-transparent">
                 <li class="form-line w-[676px] h-[127px] z-[1] px-0 py-0 mx-0 my-0 overflow-visible w-full flex flex-wrap items-start relative">
@@ -168,7 +168,7 @@
                     <div class="border-[#e5e7f2] w-[752px] h-[108px] flex justify-between items-end flex-wrap relative py-[30px] mt-0 mb-[-38px] border-t solid">
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                             Already have an account?
-                            <a asp-action="Login" asp-controller="Home" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign in</a>
+                            <a asp-action="Login" asp-controller="Auth" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign in</a>
                         </p>
                         <div class="w-[190px] h-12 inline-block">
                             <button type="button" class="form-submit w-[180px] select-text bg-[#1a7597] border-[#1a7597] text-white flex items-center justify-center h-12 text-base font-medium rounded-b rounded-t solid ">Submit</button>

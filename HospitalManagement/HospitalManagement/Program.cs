@@ -25,10 +25,15 @@ namespace HospitalManagement
                 .AddAuthentication("Cookies")
                 .AddCookie("Cookies");
 
+            builder.Services.AddDbContext<HospitalDbContext>(opt =>
+            {
+                opt.UseNpgsql(DatabaseConstants.CONNECTION_STRING);
+            });
+
 
             builder.Services
                 .AddScoped<IUserService, UserService>()
-                .AddSingleton<IFileService, IFileService>()
+                .AddSingleton<IFileService, FileService>()
                 .AddDbContext<HospitalDbContext>(o =>
                 {
                     o.UseNpgsql(DatabaseConstants.CONNECTION_STRING);

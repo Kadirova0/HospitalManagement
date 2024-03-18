@@ -18,12 +18,12 @@
                     </h1>
                     <form asp-controller="Auth" asp-action="Login" class="space-y-4 md:space-y-6" action="#">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your e-mail</label>
+                            <label asp-for="Email" class="block mb-2 text-sm font-medium text-gray-900">Your e-mail</label>
                             <input asp-for="Email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg block w-full p-2.5" placeholder="myname@example.com" required="">
                             <span asp-validation-for="Email"></span>
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+                            <label asp-for="Password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
                             <input asp-for="Password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5" required="">
                             <span asp-validation-for="Password"></span>
                         </div>
